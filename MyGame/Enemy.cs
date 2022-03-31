@@ -85,6 +85,8 @@ namespace MyGame
             {
                 SetShield(GetShield() + value);
             }
+            
+            Enemy.totalCollectedPowerups++;
         }
     }
 }
