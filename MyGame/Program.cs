@@ -45,6 +45,8 @@ namespace MyGame
             enemies[0].PickupPowerUp(PowerUp.Health, 10);
 
             Console.WriteLine($"Total collected powerups: {Enemy.GetTotalCollectedPowerups()}");
+
+            Console.WriteLine("Merci d’utiliser ce programme!");
         }
     }
 }
