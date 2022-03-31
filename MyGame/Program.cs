@@ -33,6 +33,13 @@ namespace MyGame
                 enemies[0].GetHealth(),
                 enemies[0].GetShield()
             );
+
+            enemies[0].PickupPowerUp(PowerUp.Shield, 20);
+            Console.WriteLine("{0} got a shield boost! HP: {1} | Shield: {2}",
+                enemies[0].GetName(),
+                enemies[0].GetHealth(),
+                enemies[0].GetShield()
+            );
         }
     }
 }
