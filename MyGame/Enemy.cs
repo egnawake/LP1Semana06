@@ -2,15 +2,27 @@ namespace MyGame
 {
     public class Enemy
     {
+        private static int totalCollectedPowerups;
+
         private string name;
         private float health;
         private float shield;
+
+        static Enemy()
+        {
+            totalCollectedPowerups = 0;
+        }
 
         public Enemy(string name)
         {
             SetName(name);
             health = 100;
             shield = 0;
+        }
+
+        public static int GetTotalCollectedPowerups()
+        {
+            return totalCollectedPowerups;
         }
 
         public string GetName()
