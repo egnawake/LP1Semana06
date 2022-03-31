@@ -62,5 +62,17 @@ namespace MyGame
                     health = 0;
             }
         }
+
+        private void PickupPowerUp(PowerUp type, float value)
+        {
+            if (type == PowerUp.Health)
+            {
+                SetHealth(GetHealth() + value);
+            }
+            else if (type == PowerUp.Shield)
+            {
+                SetShield(GetShield() + value);
+            }
+        }
     }
 }
