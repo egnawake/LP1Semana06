@@ -33,6 +33,16 @@ namespace MyGame
             this.name = name.Trim();
         }
 
+        public void SetHealth(float value)
+        {
+            health = value > 100 ? 100 : value;
+        }
+
+        public void SetShield(float value)
+        {
+            shield = value > 100 ? 100 : value;
+        }
+
         public void TakeDamage(float damage)
         {
             shield -= damage;
