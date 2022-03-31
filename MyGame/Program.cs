@@ -26,6 +26,13 @@ namespace MyGame
             {
                 Console.WriteLine($"{enemy.GetName()}");
             }
+
+            enemies[0].TakeDamage(15);
+            Console.WriteLine("{0} took damage! HP: {1} | Shield: {2}",
+                enemies[0].GetName(),
+                enemies[0].GetHealth(),
+                enemies[0].GetShield()
+            );
         }
     }
 }
