@@ -33,12 +33,12 @@ namespace MyGame
             this.name = name.Trim();
         }
 
-        public void SetHealth(float value)
+        private void SetHealth(float value)
         {
             health = value > 100 ? 100 : value;
         }
 
-        public void SetShield(float value)
+        private void SetShield(float value)
         {
             shield = value > 100 ? 100 : value;
         }
@@ -63,7 +63,7 @@ namespace MyGame
             }
         }
 
-        private void PickupPowerUp(PowerUp type, float value)
+        public void PickupPowerUp(PowerUp type, float value)
         {
             if (type == PowerUp.Health)
             {
