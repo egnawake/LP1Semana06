@@ -20,6 +20,12 @@ namespace MyGame
                 string name = Console.ReadLine();
                 enemies[i] = new Enemy(name);
             }
+
+            // print each enemy's name
+            foreach (Enemy enemy in enemies)
+            {
+                Console.WriteLine($"{enemy.GetName()}");
+            }
         }
     }
 }
