@@ -40,6 +40,11 @@ namespace MyGame
                 enemies[0].GetHealth(),
                 enemies[0].GetShield()
             );
+
+            enemies[0].PickupPowerUp(PowerUp.Shield, 15);
+            enemies[0].PickupPowerUp(PowerUp.Health, 10);
+
+            Console.WriteLine($"Total collected powerups: {Enemy.GetTotalCollectedPowerups()}");
         }
     }
 }
